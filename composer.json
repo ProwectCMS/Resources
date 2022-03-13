@@ -1,0 +1,41 @@
+{
+    "name": "prowectcms/resources",
+    "version": "1.0.0",
+    "description": "",
+    "require": {
+        "illuminate/support": "^9.4",
+        "spatie/laravel-query-builder": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^7.1",
+        "sempro/phpunit-pretty-print": "^1.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ProwectCMS\\Resources\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ProwectCMS\\Resources\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alina",
+            "email": "alina.kessler@prowect.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProwectCMS\\Resources\\ServiceProvider"
+            ],
+            "aliases": {
+                "Field": "ProwectCMS\\Resources\\Facades\\Field"
+            }
+        }
+    }
+}
